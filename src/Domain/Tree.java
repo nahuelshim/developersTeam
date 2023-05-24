@@ -33,6 +33,6 @@ public class Tree extends Product{
 
     @Override
     public String toString() {
-        return super.toString()+ this.height;
+        return super.toString()+ height;
     }
 }
