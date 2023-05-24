@@ -32,6 +32,6 @@ public class Flower extends  Product {
 
     @Override
     public String toString() {
-        return super.toString() + this.color;
+        return super.toString() + color;
     }
 }
