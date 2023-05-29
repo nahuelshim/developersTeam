@@ -1,13 +1,25 @@
 package Domain;
 
-public class Product {
+import java.io.Serializable;
 
+public class Product implements Serializable {
+
+    private String name;
     private float price;
     private int quantity;
+    private static int contador = 0;
+    private int id;
 
-    public Product(float price, int quantity) {
+    public Product(String name,float price, int quantity) {
+        this.name = name;
         this.price = price;
         this.quantity = quantity;
+        contador++;
+        id = contador;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public float getPrice() {
@@ -16,6 +28,10 @@ public class Product {
 
     public int getQuantity() {
         return quantity;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setPrice(float price) {
