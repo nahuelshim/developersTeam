@@ -47,4 +47,6 @@ public class Main {
             }
         } while (option != 0);
 
+        String name;
+
     }}

@@ -45,5 +45,7 @@ public class Ticket implements Serializable {
         sb.append("  ---Total: ").append(getTotal()).append("€\n}");
 
         return sb.toString();
+
+
     }
 }
