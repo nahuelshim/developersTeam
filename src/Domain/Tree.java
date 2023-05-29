@@ -1,18 +1,16 @@
 package Domain;
 
-
-
 public class Tree extends Product{
 
-    private float height;
+    private double height;
 
-    public Tree(String name,float price, int quantity, float height) {
-        super(name,price, quantity);
+    public Tree(String name, double price, int quantity, double height) {
+        super(name, price, quantity);
         this.height = height;
 
     }
 
-    public float getHeight() {
+    public double getHeight() {
         return height;
     }
 

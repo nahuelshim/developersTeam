@@ -5,12 +5,12 @@ import java.io.Serializable;
 public class Product implements Serializable {
 
     private String name;
-    private float price;
+    private double price;
     private int quantity;
     private static int contador = 0;
     private int id;
 
-    public Product(String name,float price, int quantity) {
+    public Product(String name,double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -22,7 +22,7 @@ public class Product implements Serializable {
         return name;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
