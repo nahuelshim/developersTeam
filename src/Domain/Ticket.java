@@ -1,6 +1,7 @@
 package Domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Ticket implements Serializable {
@@ -9,8 +10,8 @@ public class Ticket implements Serializable {
     private static int contador = 0;
     private int id;
 
-    public Ticket(List<Product> products) {
-        this.products = products;
+    public Ticket() {
+        this.products = new ArrayList<>();
         contador++;
         id = contador;
     }
@@ -23,7 +24,7 @@ public class Ticket implements Serializable {
         return id;
     }
 
-    public void addProduct(String name, float price, int quantity){
+    public void addProduct(String name, double price, int quantity){
         products.add(new Product(name,price,quantity));
     }
 
