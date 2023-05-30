@@ -1,7 +1,6 @@
 package Domain;
 
 import Services.Txt;
-
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;

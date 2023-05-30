@@ -1,3 +1,5 @@
+package Services;
+
 import Domain.*;
 import Services.Method;
 import Services.Txt;
@@ -147,7 +149,7 @@ public class Menu {
                     }
                 }
             } else {
-                System.out.println("First create a flower shop, for God's sake!");
+                System.out.println("First create a flower shop");
             }
         }
 
@@ -160,7 +162,7 @@ public class Menu {
                     System.out.println("You need to add some products first!");
                 }
             } else {
-                System.out.println("First create a flower shop, for God's sake!");
+                System.out.println("First create a flower shop");
             }
         }
 

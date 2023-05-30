@@ -1,7 +1,6 @@
 package Domain;
 
 import java.io.Serializable;
-
 public class Product implements Serializable {
 
     private String name;
@@ -25,7 +24,6 @@ public class Product implements Serializable {
     public double getPrice() {
         return price;
     }
-
     public int getQuantity() {
         return quantity;
     }
@@ -48,9 +46,8 @@ public class Product implements Serializable {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "price=" + price +
-                ", quantity=" + quantity +
-                '}';
+        return "Product: " + name +
+                "\nPrice: " + price + "€" +
+                "\nQuantity: " + quantity;
     }
 }
