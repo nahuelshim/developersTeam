@@ -48,14 +48,15 @@ public class Menu {
             int newQuantity;
             List<Product> databaseList;
 
-            option = Method.getInt("This type of product already exist. Do you want to:\n" +
-                    "1. Add more stock to this product.\n" +
-                    "2. Quit.");
+            option = Method.getInt("""
+                    This type of product already exist. Do you want to:
+                    1. Add more stock to this product.
+                    2. Quit.""");
 
             if (option == 1) {
                 newQuantity = Method.getInt("How many more " + newProductName + " you want to add?");
                 databaseList = flowerShop.getInventory();
-                databaseList.get(indexProduct).changeSumQuantity(newQuantity);
+                databaseList.get(indexProduct).addQuantity(newQuantity);
                 flowerShop.updateInventory(databaseList);
                 System.out.println("Stock successfully updated!");
             } else {
@@ -328,6 +329,5 @@ public class Menu {
                 System.out.println("First create a flower shop, for God's sake!");
             }
         }
-
     }
-}
+
