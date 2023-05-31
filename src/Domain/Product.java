@@ -6,15 +6,14 @@ public class Product implements Serializable {
     private String name;
     private double price;
     private int quantity;
-    private static int contador = 0;
-    private int id;
+
+
 
     public Product(String name,double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
-        contador++;
-        id = contador;
+
     }
 
     public String getName() {
@@ -26,10 +25,6 @@ public class Product implements Serializable {
     }
     public int getQuantity() {
         return quantity;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public void setPrice(float price) {
